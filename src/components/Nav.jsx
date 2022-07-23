@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 
 const Nav = ({data,setData}) => {
   const [veri, setVeri] = useState(data)
-
+  console.log(setVeri);
   const handleBreakfast = (()=>{
   setData(veri.filter((item)=>item.category === 'breakfast'))
 })
@@ -21,14 +21,34 @@ const handleAll = (()=>{
 
   return (
     <div>
-        <div className='mt-4'>
-            <button onClick={handleAll}>All</button>
-            <button onClick={handleBreakfast}>Breakfast</button>
-            <button onClick={handleLunch}>Lunch</button>
-            <button onClick={handleShakes}>Shakes</button>
-        </div>
+      <div className='mt-4 m-auto text-center  '>
+        <button
+          onClick={handleAll}
+          className='border-0 p-2 mx-md-2 text-primary fw-bold bg-light   '
+        >
+          All
+        </button>
+        <button
+          onClick={handleBreakfast}
+          className='border-0 p-2 mx-md-2 text-primary fw-bold bg-light '
+        >
+          Breakfast
+        </button>
+        <button
+          onClick={handleLunch}
+          className='border-0 p-2 mx-md-2  text-primary fw-bold bg-light '
+        >
+          Lunch
+        </button>
+        <button
+          onClick={handleShakes}
+          className='border-0 p-2 mx-md-2  text-primary fw-bold bg-light '
+        >
+          Shakes
+        </button>
+      </div>
     </div>
-  )
+  );
 }
 
 export default Nav
