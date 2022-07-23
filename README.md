@@ -1,6 +1,6 @@
-https://vercel.com/ridvankoseler/our-menu-with-react
+https://our-menu-with-react.vercel.app/
 <br>
-[Click here to see the project](https://vercel.com/ridvankoseler/our-menu-with-react)
+[Click here to see the project](https://our-menu-with-react.vercel.app/)
 
 <br>
 
