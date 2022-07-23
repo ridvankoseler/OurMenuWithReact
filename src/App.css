@@ -10,15 +10,65 @@
 }
 img{
     width: 15rem;
+    height: 10rem;
     border: 3px solid chocolate;
     object-fit: cover;
+    cursor: pointer;
+    
+}
+img:hover{
+    transform: scale(1.05);
+    transition: 1s;
 }
 
 
 .cardDiv{
-    height: 15rem;
+    height: 12rem;
     margin: auto;
     width: 40rem;
-    background-color: lightgray;
     max-width: 35rem;
+}
+
+@media (max-width:768px) {
+    .box{
+        gap: 12rem;
+    }
+
+    .cardDiv{
+        width: 26rem;
+    }
+    .imgDiv{
+        margin: auto;
+        text-align: center;
+    }
+    
+    img{
+        width: 22rem;
+        height: 15rem;
+        object-fit: cover;
+        
+    }
+
+    .titleDiv{
+
+        
+        width: 25rem;
+    }
+
+    .descDiv1{
+        margin: auto;
+        
+        background-color: lightgray;
+    }
+
+
+}
+
+
+button:hover{
+    background-color: coral !important;
+    border-radius: 15px;
+    transition: .7s;
+    color: black !important;
+    transform: translateX(10px);
 }
